@@ -56,6 +56,8 @@ You can use any third-party tool like Zappa for deploying the project.
 
 Explain your approach and show the demo of the deployed app in the loom video, push the application code to GitHub and share the link.
 
+https://ry8rkus10k.execute-api.us-east-1.amazonaws.com/dev
+
 Problem 3: Rewrite Git History
 
 Usecase: Remove all files and sub-folders within a given folder from the entire commit history of a git repository, while maintaining the commit structure and branches.
@@ -133,3 +135,4 @@ AWS S3
 AWS IAM
 AWS Cloudformation
 Make sure s3 objects in this bucket are publicly accessible.
+![image](https://user-images.githubusercontent.com/48557380/203707360-d9c26365-8bf8-46c7-a2d2-29ca29834d18.png)
