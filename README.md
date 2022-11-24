@@ -147,3 +147,5 @@ Related article: AWS Lambda to split a multipage PDF into separate pages
 
 
 ![image](https://user-images.githubusercontent.com/48557380/203707360-d9c26365-8bf8-46c7-a2d2-29ca29834d18.png)
+
+LOOM LINK: https://www.loom.com/share/8bd7b9b98a144178842ca8b57f3434dd
