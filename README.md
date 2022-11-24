@@ -1,5 +1,5 @@
 # Devops-Assignment
-Problem 1: Write IAM Policies
+## Problem 1: Write IAM Policies
 Usecase: You’re an Admin for an AWS account, you’ve to give permissions to the users based on their role in the project, so write IAM Policies for the following use cases:
 
 For Project Owner:
@@ -35,7 +35,7 @@ Should be able to View/Query logs and metrics of the above resources.
 
 Share policies for the above use cases with the names “project_owner_iam_policy.json”, and “developer_iam_policy.json” respectively.
 
-Problem 2: Serverless Django Deployment
+## Problem 2: Serverless Django Deployment
 
 Requirement: Deploy the Django app in AWS Lambda.
 
@@ -58,7 +58,7 @@ Explain your approach and show the demo of the deployed app in the loom video, p
 
 https://ry8rkus10k.execute-api.us-east-1.amazonaws.com/dev
 
-Problem 3: Rewrite Git History
+## Problem 3: Rewrite Git History
 
 Usecase: Remove all files and sub-folders within a given folder from the entire commit history of a git repository, while maintaining the commit structure and branches.
 
@@ -73,7 +73,7 @@ django/forms/
 
 Explain your approach to your solution and provide a link to the modified repo.
 
-Problem 4: API Gateway to S3
+## Problem 4: API Gateway to S3
 
 Requirement: We need a PUT API in API Gateway which writes the request body of the API directly to the S3.
 
@@ -135,4 +135,15 @@ AWS S3
 AWS IAM
 AWS Cloudformation
 Make sure s3 objects in this bucket are publicly accessible.
+
+ Invoke URL: https://xv3p5t18t6.execute-api.ap-south-1.amazonaws.com/dev
+ curl --request PUT -H "Content-Type: application/json"  --data-binary "@myrequest.json" https://xv3p5t18t6.execute-api.ap-south-1.amazonaws.com/dev/apigtw-s3/myrequest.json
+Upload process via CURL
+
+That's it! We'll roll on to the nest task and you feel free to write to us on dev@bluegrid.io!
+
+Related article: AWS Lambda to split a multipage PDF into separate pages
+
+
+
 ![image](https://user-images.githubusercontent.com/48557380/203707360-d9c26365-8bf8-46c7-a2d2-29ca29834d18.png)
