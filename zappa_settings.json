@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "aws_region": "ap-south-1a",
+        "django_settings": "core.settings",
+        "profile_name": "default",
+        "project_name": "core",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-38azr4jv3"
+    }
+}
