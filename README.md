@@ -1,4 +1,7 @@
 # Devops-Assignment
+
+LOOM LINK: https://www.loom.com/share/8bd7b9b98a144178842ca8b57f3434dd
+
 ## Problem 1: Write IAM Policies
 Usecase: You’re an Admin for an AWS account, you’ve to give permissions to the users based on their role in the project, so write IAM Policies for the following use cases:
 
@@ -137,13 +140,9 @@ AWS Cloudformation
 Make sure s3 objects in this bucket are publicly accessible.
 
  Invoke URL: https://xv3p5t18t6.execute-api.ap-south-1.amazonaws.com/dev
+ 
+Upload process via CURL:
  curl --request PUT -H "Content-Type: application/json"  --data-binary "@myrequest.json" https://xv3p5t18t6.execute-api.ap-south-1.amazonaws.com/dev/apigtw-s3/myrequest.json
-Upload process via CURL
-
-That's it! We'll roll on to the nest task and you feel free to write to us on dev@bluegrid.io!
-
-Related article: AWS Lambda to split a multipage PDF into separate pages
-
 
 
 ![image](https://user-images.githubusercontent.com/48557380/203707360-d9c26365-8bf8-46c7-a2d2-29ca29834d18.png)
