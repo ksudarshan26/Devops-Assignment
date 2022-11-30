@@ -1,0 +1,57 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "codecommit:GitPush",
+                "codecommit:Update*"
+            ],
+            "Resource": "*",
+            "Effect": "Deny",
+            "Condition": {
+                "StringEqualsIfExists": {
+                    "codecommit:References": [
+                        "refs/heads/prod",
+                        "refs/heads/staging"
+                    ]
+                },
+                "Null": {
+                    "codecommit:References": false
+                }
+            }
+        },
+        {
+            "Action": [
+                "codecommit:GitPush",
+                "codecommit:Update*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "codecommit:Get*",
+                "codecommit:BatchGetRepositories",
+                "codecommit:List*",
+                "codecommit:GitPull",
+                "codecommit:CreatePullRequest"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics",
+                "logs:GetLogRecord",
+                "logs:GetQueryResults",
+                "logs:DescribeLogStreams",
+                "logs:GetLogEvents",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "codecommit:Git*",
+                "codecommit:Update*",
+                "codecommit:Create*",
+                "codecommit:Merge*",
+                "codecommit:DeleteBranch",
+                "codecommit:Post*"
+            ],
+            "Resource": [
+                "*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "codecommit:Get*",
+                "codecommit:BatchGetRepositories",
+                "codecommit:List*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics",
+                "logs:GetLogRecord",
+                "logs:GetQueryResults",
+                "logs:DescribeLogStreams",
+                "logs:GetLogEvents",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "codebuild:BatchGet*",
+                "codebuild:List*",
+                "codebuild:UpdateProject",
+                "codebuild:StartBuild",
+                "codebuild:StopBuild",
+                "codebuild:RetryBuild"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:Get*",
+                "lambda:List*",
+                "lambda:Update*",
+                "lambda:PublishLayerVersion",
+                "lambda:AddPermission",
+                "lambda:InvokeFunction"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "apigateway:GET",
+                "apigateway:POST",
+                "apigateway:PATCH",
+                "apigateway:PUT"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
